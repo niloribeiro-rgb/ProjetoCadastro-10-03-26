@@ -5,38 +5,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>usuarios</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js" defer></script>
 </head>
 
 <body>
-    <h1>Cadastro de usuarios</h1>
-    <div class="inputContainer">
-        <label for="usuario">Usuário:</label>
-        <input type="text" id="usuario">
-        <label for="senha:">Senha:</label>
-        <input type="password" id="senha">
-        <button onclick="cadastrar()">Cadastrar</button>
-    </div>
+    <section>
+        <h1>Cadastro de usuarios</h1>
 
-    <button onclick="seeUsuarios()">Ver usuários</button>
-    <h1>Usuarios cadastrados</h1>
-    <table>
-        <thead>
-            <!-- table head -->
-            <tr>
-                <th>Usuário</th>
-                <th>Senha</th>
-                <th>Ação</th>
-            </tr>
-        </thead>
-        <tbody id="tabela">
-            <!-- table body -->
-             <!-- botei id no table body pq nao da div -->
+        <div class="inputContainer">
+            <label for="usuario">Usuário:</label>
+            <input type="text" id="usuario">
 
-        </tbody>
-    </table>
+            <label for="senha:">Senha:</label>
+            <input type="password" id="senha">
+        </div>
+
+        <div class="buttonContainen">
+            <button onclick="cadastrar()" type="button" class="bContainer">Cadastrar</button>
+        </div>
+        <div class="buttonContainen">
+            <button onclick="seeUsuarios()" type="button" class="bContainer">Ver usuários</button>
+        </div>
+
+        <h1>Usuarios cadastrados</h1>
+        <div class="tableContainer">
+
+            <table>
+                <thead>
+                    <!-- table head -->
+                    <tr>
+                        <th>Usuário</th>
+                        <th>Senha</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <tbody id="tabela">
+                    <!-- table body -->
+                    <!-- botei id no table body pq nao da div -->
+
+                </tbody>
+            </table>
+        </div>
+    </section>
 </body>
 
 </html>
-
