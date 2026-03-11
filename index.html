@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>usuarios</title>
-      <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <script src="../js/script.js" defer></script>
 </head>
 
@@ -16,16 +16,25 @@
         <input type="text" id="usuario">
         <label for="senha:">Senha:</label>
         <input type="password" id="senha">
-        <button onclick="">Cadastrar</button>
+        <button onclick="cadastrar()">Cadastrar</button>
     </div>
-    <h1>Usuarios cadastrados</h1>
-    <table id="tabela">
-        <tr>
-            <th>Usuário</th>
-            <th>Senha</th>
-            <th>Ação</th>
-        </tr>
 
+    <button onclick="seeUsuarios()">Ver usuários</button>
+    <h1>Usuarios cadastrados</h1>
+    <table>
+        <thead>
+            <!-- table head -->
+            <tr>
+                <th>Usuário</th>
+                <th>Senha</th>
+                <th>Ação</th>
+            </tr>
+        </thead>
+        <tbody id="tabela">
+            <!-- table body -->
+             <!-- botei id no table body pq nao da div -->
+
+        </tbody>
     </table>
 </body>
 
