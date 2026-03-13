@@ -15,6 +15,7 @@ section {
     flex-direction: column;
     gap: 15px;
     border-radius: 5px;
+
 }
 
 h1 {
@@ -37,29 +38,29 @@ input {
 }
 
 .buttonContainen {
-    background-color: rgba(90, 90, 90, 0.835);
-     border-radius: 8px;
+    background-color: #f0f0d8;
+    border-radius: 8px;
 }
 
 .bContainer {
     margin: 0;
-    background-color: #66aed6;
-    padding: 10px;
+    background-color: #c0d860;
+    padding: 13px;
     border: none;
     border-radius: 8px;
     color: white;
-    transition: 0.2s;
+
     width: 100%;
     transform: translatey(-4px);
 }
 
 .bContainer:hover {
-    background-color: #5ea5cb;
+    background-color: #789048;
 
 }
 
 .bContainer:active {
-    background-color: #41718b;
+    background-color: #607848;
     transform: translatey(0);
 }
 
